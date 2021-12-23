@@ -51,6 +51,8 @@ set nocompatible "For ultisnips
 set background=dark
 set nowrap
 set noswapfile
+set nobackup
+set nowritebackup
 
 " Make vertical separator pretty
 highlight VertSplit cterm=NONE
@@ -67,34 +69,7 @@ nmap <M-Up> :resize -1<CR>
 " Pluggin configs
 let NERDTreeMinimalUI=1
 
-" sync open file with NERDTree
-" " Check if NERDTree is open or active
-"function! IsNERDTreeOpen()
-"  return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
-"endfunction
-"" Call NERDTreeFind iff NERDTree is active, current window contains a modifiable
-"" file, and we're not in vimdiff
-"function! SyncTree()
-"  if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
-"    NERDTreeFind
-"    wincmd p
-"  endif
-"endfunction
-"" Highlight currently open buffer in NERDTree
-"autocmd BufEnter * call SyncTree()
-
-" Set internal encoding of vim, not needed on neovim, since coc.nvim using some
-" unicode characters in the file autoload/float.vim
-set encoding=utf-8
-
-" TextEdit might fail if hidden is not set.
-set hidden
-
-" Some servers have issues with backup files, see #649.
-set nobackup
-set nowritebackup
-
-" Give more space for displaying messages.
+ Give more space for displaying messages.
 set cmdheight=2
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
