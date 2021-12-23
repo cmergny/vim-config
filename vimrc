@@ -69,7 +69,7 @@ nmap <M-Up> :resize -1<CR>
 " Pluggin configs
 let NERDTreeMinimalUI=1
 
- Give more space for displaying messages.
+"Give more space for displaying messages.
 set cmdheight=2
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
@@ -88,7 +88,7 @@ else
   set signcolumn=yes
 endif
 
-" Use tab for trigger completion with characters ahead and navigate.
+"uUse tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
 inoremap <silent><expr> <TAB>
