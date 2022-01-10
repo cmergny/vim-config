@@ -1,7 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-dice = np.random.random()
+x = np.linspace(0, 10, 30)  
+y = x+3
 
-print(dice)
-
+fig, ax = plt.subplots(figsize=(10, 10))
+ax.plot(x, y)
+ax.set_xlabel('x')
+ax.set_ylabel('y')
+plt.show()
